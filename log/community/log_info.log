@@ -1,0 +1,35 @@
+2020-11-28 13:33:55,562 INFO [main] c.n.c.MailTests [StartupInfoLogger.java:55] Starting MailTests using Java 12.0.2 on DESKTOP-OH4ATJV with PID 1224 (started by Administrator in D:\Spring Boot\workspace\community)
+2020-11-28 13:33:55,569 INFO [main] c.n.c.MailTests [SpringApplication.java:660] No active profile set, falling back to default profiles: default
+2020-11-28 13:33:56,808 INFO [main] o.s.s.c.ThreadPoolTaskExecutor [ExecutorConfigurationSupport.java:181] Initializing ExecutorService 'applicationTaskExecutor'
+2020-11-28 13:33:56,887 INFO [main] o.s.b.a.w.s.WelcomePageHandlerMapping [WelcomePageHandlerMapping.java:58] Adding welcome page template: index
+2020-11-28 13:33:57,119 INFO [main] c.n.c.MailTests [StartupInfoLogger.java:61] Started MailTests in 1.866 seconds (JVM running for 2.533)
+2020-11-28 13:33:57,972 INFO [SpringContextShutdownHook] o.s.s.c.ThreadPoolTaskExecutor [ExecutorConfigurationSupport.java:218] Shutting down ExecutorService 'applicationTaskExecutor'
+2020-11-28 13:38:11,559 INFO [main] c.n.c.MailTests [StartupInfoLogger.java:55] Starting MailTests using Java 12.0.2 on DESKTOP-OH4ATJV with PID 4920 (started by Administrator in D:\Spring Boot\workspace\community)
+2020-11-28 13:38:11,561 INFO [main] c.n.c.MailTests [SpringApplication.java:660] No active profile set, falling back to default profiles: default
+2020-11-28 13:38:12,697 INFO [main] o.s.s.c.ThreadPoolTaskExecutor [ExecutorConfigurationSupport.java:181] Initializing ExecutorService 'applicationTaskExecutor'
+2020-11-28 13:38:12,775 INFO [main] o.s.b.a.w.s.WelcomePageHandlerMapping [WelcomePageHandlerMapping.java:58] Adding welcome page template: index
+2020-11-28 13:38:12,974 INFO [main] c.n.c.MailTests [StartupInfoLogger.java:61] Started MailTests in 1.713 seconds (JVM running for 2.265)
+2020-11-28 13:38:13,656 INFO [SpringContextShutdownHook] o.s.s.c.ThreadPoolTaskExecutor [ExecutorConfigurationSupport.java:218] Shutting down ExecutorService 'applicationTaskExecutor'
+2020-11-28 13:42:37,028 INFO [main] c.n.c.MailTests [StartupInfoLogger.java:55] Starting MailTests using Java 12.0.2 on DESKTOP-OH4ATJV with PID 5216 (started by Administrator in D:\Spring Boot\workspace\community)
+2020-11-28 13:42:37,031 INFO [main] c.n.c.MailTests [SpringApplication.java:660] No active profile set, falling back to default profiles: default
+2020-11-28 13:42:38,182 INFO [main] o.s.s.c.ThreadPoolTaskExecutor [ExecutorConfigurationSupport.java:181] Initializing ExecutorService 'applicationTaskExecutor'
+2020-11-28 13:42:38,256 INFO [main] o.s.b.a.w.s.WelcomePageHandlerMapping [WelcomePageHandlerMapping.java:58] Adding welcome page template: index
+2020-11-28 13:42:38,465 INFO [main] c.n.c.MailTests [StartupInfoLogger.java:61] Started MailTests in 1.727 seconds (JVM running for 2.256)
+2020-11-28 13:45:06,986 INFO [main] c.n.c.MailTests [StartupInfoLogger.java:55] Starting MailTests using Java 12.0.2 on DESKTOP-OH4ATJV with PID 11320 (started by Administrator in D:\Spring Boot\workspace\community)
+2020-11-28 13:45:06,988 INFO [main] c.n.c.MailTests [SpringApplication.java:660] No active profile set, falling back to default profiles: default
+2020-11-28 13:45:08,140 INFO [main] o.s.s.c.ThreadPoolTaskExecutor [ExecutorConfigurationSupport.java:181] Initializing ExecutorService 'applicationTaskExecutor'
+2020-11-28 13:45:08,216 INFO [main] o.s.b.a.w.s.WelcomePageHandlerMapping [WelcomePageHandlerMapping.java:58] Adding welcome page template: index
+2020-11-28 13:45:08,423 INFO [main] c.n.c.MailTests [StartupInfoLogger.java:61] Started MailTests in 1.726 seconds (JVM running for 2.272)
+2020-11-28 13:45:29,264 INFO [SpringContextShutdownHook] o.s.s.c.ThreadPoolTaskExecutor [ExecutorConfigurationSupport.java:218] Shutting down ExecutorService 'applicationTaskExecutor'
+2020-11-28 13:56:18,209 INFO [main] c.n.c.MailTests [StartupInfoLogger.java:55] Starting MailTests using Java 12.0.2 on DESKTOP-OH4ATJV with PID 1272 (started by Administrator in D:\Spring Boot\workspace\community)
+2020-11-28 13:56:18,212 INFO [main] c.n.c.MailTests [SpringApplication.java:660] No active profile set, falling back to default profiles: default
+2020-11-28 13:56:19,376 INFO [main] o.s.s.c.ThreadPoolTaskExecutor [ExecutorConfigurationSupport.java:181] Initializing ExecutorService 'applicationTaskExecutor'
+2020-11-28 13:56:19,450 INFO [main] o.s.b.a.w.s.WelcomePageHandlerMapping [WelcomePageHandlerMapping.java:58] Adding welcome page template: index
+2020-11-28 13:56:19,648 INFO [main] c.n.c.MailTests [StartupInfoLogger.java:61] Started MailTests in 1.741 seconds (JVM running for 2.278)
+2020-11-28 13:56:39,537 INFO [SpringContextShutdownHook] o.s.s.c.ThreadPoolTaskExecutor [ExecutorConfigurationSupport.java:218] Shutting down ExecutorService 'applicationTaskExecutor'
+2020-11-28 14:31:27,800 INFO [main] c.n.c.MailTests [StartupInfoLogger.java:55] Starting MailTests using Java 12.0.2 on DESKTOP-OH4ATJV with PID 8120 (started by Administrator in D:\Spring Boot\workspace\community)
+2020-11-28 14:31:27,802 INFO [main] c.n.c.MailTests [SpringApplication.java:660] No active profile set, falling back to default profiles: default
+2020-11-28 14:31:28,982 INFO [main] o.s.s.c.ThreadPoolTaskExecutor [ExecutorConfigurationSupport.java:181] Initializing ExecutorService 'applicationTaskExecutor'
+2020-11-28 14:31:29,064 INFO [main] o.s.b.a.w.s.WelcomePageHandlerMapping [WelcomePageHandlerMapping.java:58] Adding welcome page template: index
+2020-11-28 14:31:29,272 INFO [main] c.n.c.MailTests [StartupInfoLogger.java:61] Started MailTests in 1.764 seconds (JVM running for 2.301)
+2020-11-28 14:31:50,020 INFO [SpringContextShutdownHook] o.s.s.c.ThreadPoolTaskExecutor [ExecutorConfigurationSupport.java:218] Shutting down ExecutorService 'applicationTaskExecutor'

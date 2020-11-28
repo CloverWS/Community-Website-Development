@@ -1,0 +1,7 @@
+2020-11-27 11:05:04,363 INFO [main] c.n.c.LoggerTests [StartupInfoLogger.java:55] Starting LoggerTests using Java 12.0.2 on DESKTOP-OH4ATJV with PID 9296 (started by Administrator in D:\Spring Boot\workspace\community)
+2020-11-27 11:05:04,365 INFO [main] c.n.c.LoggerTests [SpringApplication.java:660] No active profile set, falling back to default profiles: default
+2020-11-27 11:05:05,485 INFO [main] o.s.s.c.ThreadPoolTaskExecutor [ExecutorConfigurationSupport.java:181] Initializing ExecutorService 'applicationTaskExecutor'
+2020-11-27 11:05:05,563 INFO [main] o.s.b.a.w.s.WelcomePageHandlerMapping [WelcomePageHandlerMapping.java:58] Adding welcome page template: index
+2020-11-27 11:05:05,752 INFO [main] c.n.c.LoggerTests [StartupInfoLogger.java:61] Started LoggerTests in 1.692 seconds (JVM running for 2.218)
+2020-11-27 11:05:06,041 INFO [main] c.n.c.LoggerTests [LoggerTests.java:24] info log
+2020-11-27 11:05:06,049 INFO [SpringContextShutdownHook] o.s.s.c.ThreadPoolTaskExecutor [ExecutorConfigurationSupport.java:218] Shutting down ExecutorService 'applicationTaskExecutor'
