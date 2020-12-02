@@ -3,9 +3,9 @@ This is a practice project, currently only in Chinese, and the English version w
 
 The project is developed on the basis of **Spring boot**, MySQL, MyBatis...
 
-- [28.11.2020index](#28.11.2020 index site)
-- [02.12.2020register](#02.12.2020 register)
-## 28.11.2020 index site 
+- [28.11.2020_index](#28.11.2020_index_site)
+- [02.12.2020_register](#02.12.2020_register)
+## 28.11.2020_index_site 
 * On this page, posts made by users will be displayed. In addition, the user's avatar, username, publishing time, etc. will be displayed. If the post is marked as essential or top, it will be displayed.
 * And every page has only 10 posts will be displayed.
 ![](https://i.imgur.com/kHREX4p.png)
@@ -15,7 +15,7 @@ The project is developed on the basis of **Spring boot**, MySQL, MyBatis...
 ![](https://i.imgur.com/hzTYZom.png)
 and Only up to four pages will be displayed.
 
-## 02.12.2020 register
+## 02.12.2020_register
 * register
 It is not allowed to use the same username and the same email address for registration. If used, a corresponding warning message will be given. 
 ![](https://i.imgur.com/k9zjbrG.png)
