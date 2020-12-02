@@ -2,9 +2,9 @@
 This is a practice project, currently only in Chinese, and the English version will be added later.
 
 The project is developed on the basis of **Spring boot**, MySQL, MyBatis...
-[gh-md-toc]
-- [28.11.2020 index site](#28.11.2020 index site)
-- [02.12.2020 register](#02.12.2020 register)
+
+- [28.11.2020index](#28.11.2020indexsite)
+- [02.12.2020register](#02.12.2020register)
 ## 28.11.2020 index site 
 * On this page, posts made by users will be displayed. In addition, the user's avatar, username, publishing time, etc. will be displayed. If the post is marked as essential or top, it will be displayed.
 * And every page has only 10 posts will be displayed.
