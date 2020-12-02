@@ -1,5 +1,5 @@
 # Community website Development
-This is a practice project, currently only in Chinese, and the English version will be added later.
+This is a practice project, currently only has Chinese version, and the English version will be added later.
 
 The project is developed on the basis of **Spring boot**, MySQL, MyBatis...
 
