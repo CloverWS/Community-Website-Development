@@ -34,8 +34,6 @@ If you are the first time to click to activate, a successful activation page wil
 
 * Session
 ![](https://i.imgur.com/uHrsn11.png)
-
-
 ![](https://i.imgur.com/8uvBI1A.png)
 
 
