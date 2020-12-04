@@ -5,6 +5,8 @@ The project is developed on the basis of **Spring boot**, MySQL, MyBatis...
 
 - [28.11.2020 index](#28.11.2020_index_site)
 - [02.12.2020 register](#02.12.2020_register)
+- [04.12.2020 Cookie, Session, Kaptcha](#02.12.2020_register)
+
 ## 28.11.2020_index_site 
 * On this page, posts made by users will be displayed. In addition, the user's avatar, username, publishing time, etc. will be displayed. If the post is marked as essential or top, it will be displayed.
 * And every page has only 10 posts will be displayed.
@@ -24,3 +26,19 @@ If the registration is successful, the user information will be uploaded to the 
 ![](https://i.imgur.com/QvJrg8g.png)
 
 If you are the first time to click to activate, a successful activation page will be displayed, and the login page will be displayed after 8 seconds. If you are to repeatedly click to activate or use an invalid activation link, a corresponding warning page will be displayed.
+
+## 04.12.2020 Cookie, Session, Kaptcha
+
+* Cookie
+![](https://i.imgur.com/DiYL7ee.png)
+
+* Session
+![](https://i.imgur.com/uHrsn11.png)
+
+
+![](https://i.imgur.com/8uvBI1A.png)
+
+
+* Kaptcha
+![](https://i.imgur.com/oToJwpY.png)
+![](https://i.imgur.com/820Swiv.png)
