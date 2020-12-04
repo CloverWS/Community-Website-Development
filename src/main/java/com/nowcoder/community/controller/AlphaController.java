@@ -1,14 +1,14 @@
 package com.nowcoder.community.controller;
 
 import com.nowcoder.community.service.AlphaService;
+import com.nowcoder.community.util.CommunityUtil;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.*;
 import org.springframework.web.servlet.ModelAndView;
 
-import javax.servlet.http.HttpServletRequest;
-import javax.servlet.http.HttpServletResponse;
+import javax.servlet.http.*;
 import java.io.IOException;
 import java.io.PrintWriter;
 import java.util.*;
@@ -153,7 +153,52 @@ public class AlphaController {
     }
     //-----------------------------------------------------------------------------------------------------------------
 
+    // Cookie示例
+    @RequestMapping(path = "/cookie/set", method = RequestMethod.GET)
+    @ResponseBody
+    public String setCookie(HttpServletResponse response){
+        // 创建Cookie
+        Cookie cookie = new Cookie("code", CommunityUtil.generateUUID());
+        // 设置cookie生效的范围, 例子下面，仅在community/alpha 以及 alpha的子路径下有效.
+        cookie.setPath("/community/alpha");
+        // cookie的生存时间 ： 一般情况下，关掉浏览器后，cookie就会被销毁。
+        // 需要需要自己设置时间，就需要用到setMaxAge（second）
+        cookie.setMaxAge(60 * 10);
+        //发送cookie
+        response.addCookie(cookie);
+        return "set cookie";
+    }
 
 
+    @RequestMapping(path = "/cookie/get", method = RequestMethod.GET)
+    @ResponseBody
+    public String getCookie(@CookieValue("code") String code){
+        System.out.println(code);
+        return "get cookie";
+    }
+
+    //-----------------------------------------------------------------------------------------------------------------
+
+    // session示例
+    @RequestMapping(path = "/session/set", method = RequestMethod.GET)
+    @ResponseBody
+    public String setSession(HttpSession session){
+        session.setAttribute("id",1);
+        session.setAttribute("name","Test");
+        return "set session";
+    }
+
+    @RequestMapping(path = "/session/get", method = RequestMethod.GET)
+    @ResponseBody
+    public String getSession(HttpSession session){
+        System.out.println(session.getAttribute("id"));
+        System.out.println(session.getAttribute("name"));
+        return "get Session";
+    }
+
+    // 优点： 数据存在服务器上，更加安全，且储存数据类型不受限制
+    // 缺点： 增加服务器的压力
+
+    //-----------------------------------------------------------------------------------------------------------------
 
 }
