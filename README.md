@@ -37,6 +37,6 @@ If you are the first time to click to activate, a successful activation page wil
 ![](https://i.imgur.com/8uvBI1A.png)
 
 
-* Kaptcha
+* Kaptcha  
 ![](https://i.imgur.com/oToJwpY.png)
 ![](https://i.imgur.com/820Swiv.png)
