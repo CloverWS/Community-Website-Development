@@ -1,5 +1,6 @@
 package com.nowcoder.community.controller;
 
+import com.nowcoder.community.annotation.LoginRequired;
 import com.nowcoder.community.dao.UserMapper;
 import com.nowcoder.community.entity.User;
 import com.nowcoder.community.service.UserService;
@@ -45,11 +46,13 @@ public class UserController {
     @Autowired
     HostHolder hostHolder;
 
+    @LoginRequired
     @RequestMapping(path = "/setting", method = RequestMethod.GET)
     public String getSettingPage(){
         return "/site/setting";
     }
 
+    @LoginRequired
     @RequestMapping(path = "/upload", method = RequestMethod.POST)
     public String uploadHeader(MultipartFile headerImage, Model model){
         if (headerImage == null){
@@ -93,6 +96,7 @@ public class UserController {
         return "redirect:/index";
     }
 
+
     @RequestMapping(path = "/header/{fileName}", method = RequestMethod.GET)
     public void getHeader(@PathVariable("fileName") String fileName, HttpServletResponse response){
         // 服务器存放路径
@@ -119,6 +123,7 @@ public class UserController {
         }
     }
 
+    @LoginRequired
     @RequestMapping(path = "/resetPassword", method = RequestMethod.POST)
     public String resetPassword(@CookieValue("ticket") String ticket, String password, String newPassword, String confirmPassword, Model model){
         if (StringUtils.isBlank(password)){

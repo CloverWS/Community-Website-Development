@@ -17,4 +17,10 @@ public interface DiscussPostMapper {
     int selectDiscussPostRows(@Param("userId") int userId); //@Param("alias") 当参数名太长了，可以用@Param取别名。
     //如果只有一个参数，并且在<if>里使用，则必须加别名
 
+    // 插入帖子
+    int insertDiscussPost(DiscussPost discussPost);
+
+    // 查询帖子的详情
+    DiscussPost selectDiscussPostById(int id);
+
 }
