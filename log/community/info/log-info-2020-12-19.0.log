@@ -1,0 +1,20 @@
+2020-12-19 18:59:19,309 INFO [main] c.n.c.TransactionTest [StartupInfoLogger.java:55] Starting TransactionTest using Java 12.0.2 on DESKTOP-OH4ATJV with PID 4416 (started by Administrator in D:\Spring Boot\workspace\community)
+2020-12-19 18:59:19,314 INFO [main] c.n.c.TransactionTest [SpringApplication.java:660] No active profile set, falling back to default profiles: default
+2020-12-19 18:59:20,735 INFO [main] o.s.s.c.ThreadPoolTaskExecutor [ExecutorConfigurationSupport.java:181] Initializing ExecutorService 'applicationTaskExecutor'
+2020-12-19 18:59:20,822 INFO [main] o.s.b.a.w.s.WelcomePageHandlerMapping [WelcomePageHandlerMapping.java:58] Adding welcome page template: index
+2020-12-19 18:59:21,012 INFO [main] c.n.c.TransactionTest [StartupInfoLogger.java:61] Started TransactionTest in 2.043 seconds (JVM running for 2.734)
+2020-12-19 18:59:21,355 INFO [main] c.z.h.HikariDataSource [HikariDataSource.java:110] HikariPool-1 - Starting...
+2020-12-19 18:59:21,480 INFO [main] c.z.h.HikariDataSource [HikariDataSource.java:123] HikariPool-1 - Start completed.
+2020-12-19 18:59:21,755 INFO [SpringContextShutdownHook] o.s.s.c.ThreadPoolTaskExecutor [ExecutorConfigurationSupport.java:218] Shutting down ExecutorService 'applicationTaskExecutor'
+2020-12-19 18:59:21,756 INFO [SpringContextShutdownHook] c.z.h.HikariDataSource [HikariDataSource.java:350] HikariPool-1 - Shutdown initiated...
+2020-12-19 18:59:21,763 INFO [SpringContextShutdownHook] c.z.h.HikariDataSource [HikariDataSource.java:352] HikariPool-1 - Shutdown completed.
+2020-12-19 19:09:50,627 INFO [main] c.n.c.TransactionTest [StartupInfoLogger.java:55] Starting TransactionTest using Java 12.0.2 on DESKTOP-OH4ATJV with PID 15920 (started by Administrator in D:\Spring Boot\workspace\community)
+2020-12-19 19:09:50,630 INFO [main] c.n.c.TransactionTest [SpringApplication.java:660] No active profile set, falling back to default profiles: default
+2020-12-19 19:09:51,907 INFO [main] o.s.s.c.ThreadPoolTaskExecutor [ExecutorConfigurationSupport.java:181] Initializing ExecutorService 'applicationTaskExecutor'
+2020-12-19 19:09:51,984 INFO [main] o.s.b.a.w.s.WelcomePageHandlerMapping [WelcomePageHandlerMapping.java:58] Adding welcome page template: index
+2020-12-19 19:09:52,147 INFO [main] c.n.c.TransactionTest [StartupInfoLogger.java:61] Started TransactionTest in 1.827 seconds (JVM running for 2.367)
+2020-12-19 19:09:52,458 INFO [main] c.z.h.HikariDataSource [HikariDataSource.java:110] HikariPool-1 - Starting...
+2020-12-19 19:09:52,574 INFO [main] c.z.h.HikariDataSource [HikariDataSource.java:123] HikariPool-1 - Start completed.
+2020-12-19 19:09:52,845 INFO [SpringContextShutdownHook] o.s.s.c.ThreadPoolTaskExecutor [ExecutorConfigurationSupport.java:218] Shutting down ExecutorService 'applicationTaskExecutor'
+2020-12-19 19:09:52,847 INFO [SpringContextShutdownHook] c.z.h.HikariDataSource [HikariDataSource.java:350] HikariPool-1 - Shutdown initiated...
+2020-12-19 19:09:52,853 INFO [SpringContextShutdownHook] c.z.h.HikariDataSource [HikariDataSource.java:352] HikariPool-1 - Shutdown completed.
