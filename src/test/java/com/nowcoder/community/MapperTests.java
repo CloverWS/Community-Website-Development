@@ -16,6 +16,7 @@ import org.springframework.test.context.ContextConfiguration;
 import org.springframework.test.context.junit4.SpringRunner;
 import com.nowcoder.community.entity.Message;
 
+import java.util.ArrayList;
 import java.util.Date;
 import java.util.List;
 
@@ -155,5 +156,27 @@ public class MapperTests {
         count  = messageMapper.selectLetterUnreadCount(131,"111_131");
         System.out.println(count);
 
+    }
+
+    @Test
+    public void testInsertAndUpdateMessage(){
+//        Message message = new Message();
+//        message.setFromId(111);
+//        message.setToId(158);
+//
+//        if(message.getFromId() < message.getToId()){
+//            message.setConversationId(message.getFromId() + "_" + message.getToId());
+//        }else{
+//            message.setConversationId(message.getToId() + "_" + message.getFromId());
+//        }
+//
+//        message.setContent("hello test");
+//        message.setCreateTime(new Date());
+//        int result = messageMapper.insertMessage(message);
+//        System.out.println(result);
+
+        List<Integer> ids = new ArrayList<>();
+        ids.add(355);
+        messageMapper.updateStatus(ids, 1);
     }
 }
