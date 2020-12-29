@@ -7,6 +7,8 @@ import org.springframework.stereotype.Repository;
 
 @Mapper
 @Repository
+// @Deprecated ： 声明，该组件不推荐使用
+@Deprecated
 public interface LoginTicketMapper {
 
     @Insert({
