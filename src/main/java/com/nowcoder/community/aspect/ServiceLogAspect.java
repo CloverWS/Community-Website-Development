@@ -34,6 +34,11 @@ public class ServiceLogAspect {
 
         // 获取当前的request
         ServletRequestAttributes attributes = (ServletRequestAttributes) RequestContextHolder.getRequestAttributes();
+
+        // 一个特殊的调用,一般情况下都是通过controller调用的，都有request,而使用kafka时，相应的事件没有request
+        if (attributes == null){
+            return;
+        }
         HttpServletRequest request = attributes.getRequest();
 
         // 获取当前ip
