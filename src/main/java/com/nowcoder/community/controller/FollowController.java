@@ -46,6 +46,7 @@ public class FollowController implements CommunityConstant {
         Event event = new Event()
                 .setTopic(TOPIC_FOLLOW)
                 .setUserId(hostHolder.getUser().getId())
+                .setEntityUserId(entityId)
                 .setEntityType(entityType)
                 .setEntityId(entityId);
         eventProducer.fireEvent(event);
