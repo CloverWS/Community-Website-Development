@@ -9,7 +9,6 @@ import org.springframework.stereotype.Repository;
 import java.util.List;
 
 @Mapper
-@Repository
 public interface DiscussPostMapper {
 
     List<DiscussPost> selectDiscussPosts(int userId, int offset, int limit); // offset 起始ID， limit 每页显示多少数据
