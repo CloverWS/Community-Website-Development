@@ -3,6 +3,11 @@
 <head>
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+	<!--访问该页面时，强制在此处生成CSRF令牌（因为异步请求不生成CSRF令牌，需要手动设置，本次为设置到发帖功能）-->
+<!--	<meta name="_csrf" th:content="${_csrf.token}">  &lt;!&ndash;value&ndash;&gt;-->
+<!--	<meta name="_csrf_header" th:content="${_csrf.headerName}"> &lt;!&ndash; key &ndash;&gt;-->
+
 	<link rel="icon" href="https://static.nowcoder.com/images/logo_87_87.png"/>
 	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" crossorigin="anonymous">
 	<link rel="stylesheet" th:href="@{/css/global.css}" />
