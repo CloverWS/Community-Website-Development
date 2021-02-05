@@ -7,8 +7,12 @@ import com.nowcoder.community.entity.DiscussPost;
 import com.nowcoder.community.entity.User;
 import com.nowcoder.community.util.CommunityUtil;
 import org.apache.ibatis.ognl.ObjectElementsAccessor;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.context.annotation.Scope;
+import org.springframework.scheduling.annotation.Async;
+import org.springframework.scheduling.annotation.Scheduled;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.TransactionDefinition;
 import org.springframework.transaction.TransactionStatus;
@@ -38,6 +42,8 @@ public class AlphaService {
 
     @Autowired
     private TransactionTemplate transactionTemplate;
+
+    private static final Logger logger = LoggerFactory.getLogger(AlphaService.class);
 
     public AlphaService(){
         System.out.println("new instance of AlphaService");
@@ -123,4 +129,19 @@ public class AlphaService {
         });
 
     }
+
+    // 加上注解@Async， 能够让其在多线程环境下，被异步的调用，当前，需要先配置（即启动@EnableAsync）
+//    @Async
+    public void execute1(){
+        logger.debug("execute1");
+    }
+
+    // 加上注解@Scheduled， 能够让其在多线程环境下，被异步的调用，当前，需要先配置（即启动@EnableScheduling）
+    // initialDelay: 延迟多少毫秒 fixedDelay： 周期
+//    @Scheduled(initialDelay = 10000, fixedDelay = 1000)
+    public void execute2(){
+        logger.debug("execute2");
+    }
+
+
 }

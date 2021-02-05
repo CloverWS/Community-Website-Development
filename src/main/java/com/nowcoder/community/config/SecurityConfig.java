@@ -45,6 +45,21 @@ public class SecurityConfig extends WebSecurityConfigurerAdapter implements Comm
                         AUTHORITY_ADMIN,
                         AUTHORITY_MODERATOR
                 )
+                .antMatchers(
+                        "/discuss/top",
+                        "/discuss/wonderful"
+                )
+                .hasAnyAuthority(
+                        AUTHORITY_MODERATOR
+                )
+                .antMatchers(
+                        "/discuss/delete",
+                        "/data/**",
+                        "/actuator/**"
+                )
+                .hasAnyAuthority(
+                        AUTHORITY_ADMIN
+                )
                 .anyRequest().permitAll() // 除了以上的请求，未登录也允许访问
                 .and().csrf().disable();
 
@@ -56,15 +71,16 @@ public class SecurityConfig extends WebSecurityConfigurerAdapter implements Comm
                     @Override
                     public void commence(HttpServletRequest request, HttpServletResponse response, AuthenticationException e) throws IOException, ServletException {
                         String XRequestedWith = request.getHeader("x-requested-with"); //用来判断请求是否为异步请求
-                        if (XRequestedWith.equals("XMLHttpRequest")){
-                            // 异步请求 返回Json
-                            response.setContentType("application/plain;charset=utf8");
-                            PrintWriter writer = response.getWriter();
-                            writer.write(CommunityUtil.getJSONString(403,"你还没有登录"));
-                        }else {
-                            // 同步请求
-                            response.sendRedirect(request.getContextPath() + "/login");
-                        }
+
+                            if ("XMLHttpRequest".equals(XRequestedWith)){
+                                // 异步请求 返回Json
+                                response.setContentType("application/plain;charset=utf8");
+                                PrintWriter writer = response.getWriter();
+                                writer.write(CommunityUtil.getJSONString(403,"你还没有登录"));
+                            }else {
+                                // 同步请求
+                                response.sendRedirect(request.getContextPath() + "/login");
+                            }
                     }
                 })
                 .accessDeniedHandler(new AccessDeniedHandler() {
@@ -72,15 +88,16 @@ public class SecurityConfig extends WebSecurityConfigurerAdapter implements Comm
                     @Override
                     public void handle(HttpServletRequest request, HttpServletResponse response, AccessDeniedException e) throws IOException, ServletException {
                         String XRequestedWith = request.getHeader("x-requested-with"); //用来判断请求是否为异步请求
-                        if (XRequestedWith.equals("XMLHttpRequest")){
-                            // 异步请求 返回Json
-                            response.setContentType("application/plain;charset=utf8");
-                            PrintWriter writer = response.getWriter();
-                            writer.write(CommunityUtil.getJSONString(403,"你没有访问此功能的权限！"));
-                        }else {
-                            // 同步请求
-                            response.sendRedirect(request.getContextPath() + "/denied");
-                        }
+
+                            if ("XMLHttpRequest".equals(XRequestedWith)){
+                                // 异步请求 返回Json
+                                response.setContentType("application/plain;charset=utf8");
+                                PrintWriter writer = response.getWriter();
+                                writer.write(CommunityUtil.getJSONString(403,"你没有访问此功能的权限！"));
+                            }else {
+                                // 同步请求
+                                response.sendRedirect(request.getContextPath() + "/denied");
+                            }
                     }
                 });
 
